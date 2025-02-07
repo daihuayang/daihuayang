@@ -1,0 +1,24 @@
+<view class="login-container">
+  <view class="logo-area">
+    <image src="/assets/logo.png" mode="aspectFit" class="logo"></image>
+    <text class="title">课程表应用</text>
+  </view>
+
+  <view class="login-options">
+    <button class="login-btn wechat-btn" bindtap="handleWechatLogin">
+      <image src="/assets/wechat-icon.png" class="btn-icon"></image>
+      <text>微信一键登录</text>
+    </button>
+    <button class="login-btn phone-btn" bindtap="handlePhoneLogin">
+      <image src="/assets/phone-icon.png" class="btn-icon"></image>
+      <text>手机号一键登录</text>
+    </button>
+  </view>
+
+  <view class="agreement">
+    <text>登录即表示同意</text>
+    <text class="link" bindtap="navigateToAgreement">用户协议</text>
+    <text>和</text>
+    <text class="link" bindtap="navigateToPrivacy">隐私政策</text>
+  </view>
+</view>
